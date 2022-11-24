@@ -1,3 +1,15 @@
+1) Due campi di input con nome e cognome, gestiti dal componente newUser, un campo età (incremento e decremento) gestito dal componente età
+
+2) Scrittura dei dati nei campi di input e incremento/decremento età
+
+2a) Incremento e decremento creano già il valore di età nell'oggetto -> il componente età riceve il valore iniziale (0) in @Input, emette in @Output il valore di età verso newUser, che lo riceverà attraverso la variabile newEta
+
+3) CLICK SU AGGIUNGI: il componente newUser emette in @Output un oggetto valorizzato, che verrà ricevuto dal componente che utilizzerà due EventEmitter (onManCreated - onWomanCreated); app Component, attraverso due metodi onAddMan - onAddWoman, farà il push nell'array di oggetti
+
+4) L'array sarà ricevuto come dato dal componente userCard, che lo riceve in @Input e ne gestisce il ciclo (nell'app Component) e la stampa (nell'HTML)
+
+
+
 # Es2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.

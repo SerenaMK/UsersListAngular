@@ -1,0 +1,12 @@
+<div class="card my-2">
+    <div class="card-header">
+        {{ element.name + " " + element.surname + " di anni " + element.eta }}
+    </div>
+    <div class="card-body">
+        <p class="mb-0">
+            <b *ngIf="element.sex === 'Man'" style="color: red">{{ element.sex }}</b>
+            <i *ngIf="element.sex === 'Woman'" style="color: blue">{{ element.sex }}</i>
+            <b *ngIf="element.sex === 'Other'" style="color: green">{{ element.sex }}</b>
+        </p>
+    </div>
+</div>
